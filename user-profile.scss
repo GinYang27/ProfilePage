@@ -1,0 +1,236 @@
+/*=============================
+File Name: user-profile 
+
+Table of Content
+_______________________________
+===============================*/
+
+@import 'settings';
+@import 'utilities';
+
+/*=============================
+       Destop & Tablet 
+===============================*/
+#user-profile{
+    .user-info{
+        padding: 35px 0px;
+        .user-profile-photo{
+            img{
+                width: 150px;
+                max-height: 160px;
+            }
+            text-align: center;     
+        }
+        .user-profile-name{
+            text-align: center;
+            font-size: 25px;
+            margin-bottom: 10px;
+
+        }
+        .user-profile-follow{
+            text-align: center;
+            a{
+                font-size: 20px;
+                color: $ic-font-link;
+            }
+            .public-follow{
+                button{
+                    width: 150px;
+                    padding: 5px 0px;
+                    background-color: $ic-btn-blue;
+                    &:hover {
+                        background-color:$ic-btn-blue-hover;
+                    }
+                    &:active {
+                        background-color: $ic-btn-blue-active;
+                    }
+                }
+                .divider{
+                    width:80px;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+    .user-left{
+        border: 3px solid #ccc;
+        padding: 25px;
+        margin-bottom: 100px;
+        .ud-edit{
+            a{
+                color: $ic-font-link;
+            }
+            text-decoration: underline;
+            text-align: right;
+            margin: 10px 0px;
+        }
+        .ud-biograpghy{
+            margin: 10px 0;
+        }
+        .ud-social-media{
+            margin: 40px 0;
+            .fa{
+                font-size: 40px;
+                margin: 0px 10px;
+            }
+        }
+        .ud-interests{
+            margin: 40px 0;
+        }
+    }
+    .user-right{
+        .user-post{
+            border: 1px solid #ccc;
+            margin-bottom: 30px;
+            .post-content{
+                &:focus {
+                    box-shadow: none;
+                }
+                border: 0px;
+            }
+            .post-btn{
+                background-color: $ic-btn-blue;
+                padding: 5px 40px;
+                margin: 5px 10px;
+                float: right;
+                &:hover {
+                    background-color:$ic-btn-blue-hover;
+                }
+                &:active {
+                    background-color: $ic-btn-blue-active;
+                }
+            }
+        }
+        .user-posted-list{
+            margin-bottom: 100px;
+            .user-empty-posted{
+                color: gray;
+                font-size: 25px;
+            }
+            .user-posted{
+                border: 1px solid #ccc;
+                padding: 15px;
+                margin-bottom: 15px;
+                .glyphicon-trash{
+                    float: right;
+                    outline: none;
+                }
+            }
+        }
+        
+    }  
+}
+
+/*=============================
+       Mobile Devices 
+===============================*/
+#user-profile-mobile{
+    .user-info{
+        padding: 35px 0px 16px 0px;
+        .user-edit{
+            text-align: right;
+            margin-bottom: 22px;
+            a{
+                color: $ic-font-link;
+            }
+        }
+        .user-profile-photo{
+            img{
+                width: 130px;
+                max-height: 150px;
+            }
+            text-align: center;     
+        }
+        .user-profile-name{
+            text-align: center;
+            font-size: 20px;
+            margin-bottom: 10px;
+
+        }
+        .user-profile-follow{
+            text-align: center;
+            a{
+                font-size: 20px;
+                color: $ic-font-link;
+            }
+            .public-follow{
+                button{
+                    width: 110px;
+                    padding: 5px 0px;
+                    background-color: $ic-btn-blue;
+                    &:hover {
+                        background-color:$ic-btn-blue-hover;
+                    }
+                    &:active {
+                        background-color: $ic-btn-blue-active;
+                    }
+                }
+                .divider{
+                    width:20px;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+    .user-post{
+        border: 1px solid #ccc;
+        width: 95%;
+        margin: auto;
+        .post-content{
+            &:focus {
+                box-shadow: none;
+            }
+            border: 0px;
+        }
+        .post-btn{
+            background-color: $ic-btn-blue;
+            padding: 5px 15px;
+            margin: 5px 10px;
+            float: right;
+            &:hover {
+                background-color: $ic-btn-blue-hover;
+            }
+            &:active {
+                background-color: $ic-btn-blue-active;
+            }
+        }
+    }   
+    .user-left{
+        padding: 0px 15px;
+        height: auto;
+        margin-top: 35px;
+        .ud-biograpghy{
+            margin: 10px 0;
+        }
+        .ud-social-media{
+            margin: 40px 0;
+            .fa{
+                font-size: 40px;
+                margin: 0px 10px;
+            }
+        }
+        .ud-interests{
+            margin: 40px 0;
+        }
+    }
+    .user-posted-list{
+        padding: 0px 15px;
+        margin: 80px 0px 100px 0px;
+        .user-empty-posted{
+            color: gray;
+            font-size: 20px;
+        }
+        .user-posted{
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 15px;
+            .glyphicon-trash{
+                float: right;
+                outline: none;
+            }
+        }
+    }
+
+
+}
+
